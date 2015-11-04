@@ -1,13 +1,15 @@
 # Hapi Auth with JSON Web Tokens (JWT)
 
-***The*** authentication scheme/plugin for
+An authentication scheme/plugin for
 [**Hapi.js**](http://hapijs.com/) apps using **JSON Web Tokens**
-
-[![Build Status](https://travis-ci.org/stongo/hapi-auth-jwt-simple.svg "Build Status = Tests Passing")](https://travis-ci.org/stongo/hapi-auth-jwt-simple)
 
 This node.js module (Hapi plugin) lets you use JSON Web Tokens (JWTs)
 for authentication in your [Hapi.js](http://hapijs.com/)
 web application.
+
+## Motivation
+
+Some oauth2 providers don't only use one signing key, among other variations not easily encapsulated in a module that makes too many assumptions. Only use this if complexity requires you to. Otherwise, it's recommended to use [hapi-auth-jwt2](https://github.com/dwyl/hapi-auth-jwt2)
 
 ## Usage
 
@@ -171,12 +173,6 @@ See the release notes for more details:
 
 However in the interest of
  security/performance we *recommend* using the [*latest version*](https://github.com/hapijs/hapi/) of Hapi.
-
-# tl;dr
-
-## Motivation
-
-Some oauth2 providers don't only use one signing key, among other variations not easily encapsulated in a module that does too much by itself. Only use this if complexity requires you to. Otherwise, it's recommended to use [hapi-auth-jwt2](https://github.com/dwyl/hapi-auth-jwt2)
 
 ## Useful Links
 
